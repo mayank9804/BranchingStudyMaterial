@@ -1,0 +1,42 @@
+{% extends "app/layout.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="row">
+	 <div class="col-md-5">
+
+		<h2>Start Here...</h2>
+		<p> Enter the residential property address to get the following details:
+		<ul> 
+			<li> Zestimate* </li>
+			<li> Year Built* </li>
+			<li> Square Feet* </li>
+			<li> Rent Zestimate* </li>
+		    <li> School information </li>
+			<li> County* </li>
+			<li> Area Crime </li>
+		    <li> Financial/Investment Metrics </li>
+	     </ul><br>
+		 <p> Coming Soon </p>
+		 <ul>
+			 <li> Property Tax information </li>
+			 <li> Area Natural Disaster Info </li>
+			 <li> Area Economic Info </li>
+
+		</ul>
+		 <br>
+		<p>  </p>
+		   <form method="POST">
+			{% csrf_token %}
+			{{ form|crispy }}
+			<br>
+			<?button type="submit" style="width:150px;height:50px;color:green;font-size:30px"?><?/button?>
+			<input type='submit' value='SUBMIT' class='btn-lg btn-primary' />
+		</form>
+		 <br><br>
+		 <p> (*) from Zillow.com </p>
+	</div>
+ 
+</div>
+{% endblock %}
+
