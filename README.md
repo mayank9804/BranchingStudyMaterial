@@ -4,3 +4,4 @@
 "More added" 
 "Hello world appended" 
 "Hello world appended after fixing emergency bug" 
+"Hey, how come contents before stashing gets added?" 
