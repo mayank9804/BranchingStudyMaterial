@@ -9,6 +9,7 @@
 "More added" 
 "More added" 
 
+
 "Hello world appended" 
 "Hello world appended after fixing emergency bug" 
 "Hey, how come contents before stashing gets added?" 
@@ -20,4 +21,6 @@
 
 
 "FIX2 team deployed" 
+"FIX2 team deployed" 
+"FIX2 new team deployed " 
 
